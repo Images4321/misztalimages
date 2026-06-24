@@ -7,296 +7,383 @@
     content="width=device-width, initial-scale=1.0"
   />
 
-  <title>Misztal Images | Photography Portfolio</title>
+  <title>Misztal Images | Photography by Fred Misztal</title>
+
+  <meta
+    name="description"
+    content="Misztal Images is a personal photography archive by Fred Misztal, featuring landscape, travel, digital and 35mm film photography from Australia and abroad."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap"
+    rel="stylesheet"
+  >
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Shared CSS -->
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F0F5F9;
+      color: #1E2022;
+    }
+
+    .font-serif-display {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container-width {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .nav-blur {
+      background: rgba(240, 245, 249, 0.88);
+      backdrop-filter: blur(14px);
+    }
+
+    .image-soft {
+      transition: transform 0.7s ease, opacity 0.7s ease;
+    }
+
+    .image-soft:hover {
+      transform: scale(1.035);
+      opacity: 0.92;
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-  <header
-    class="fixed top-0 left-0 w-full z-50 nav-blur border-b border-[#C9D6DF]"
-  >
-    <nav class="container-width px-6 py-4">
+  <header class="fixed top-0 left-0 w-full z-50 nav-blur border-b border-[#C9D6DF]">
+    <nav class="container-width px-6 py-4 flex justify-between items-center">
 
-      <div class="flex justify-between items-center">
+      <a href="index.html" class="text-xl md:text-2xl font-serif-display tracking-wide">
+        Misztal Images
+      </a>
 
-        <a
-          href="index.html"
-          class="font-semibold text-2xl text-[#1E2022]"
-        >
-          Misztal Images
-        </a>
-
-        <!-- Desktop Navigation -->
-        <div class="hidden md:flex gap-8 text-sm">
-       <a href="gallery.html">Gallery</a>
-       <a href="collections.html">Collections</a>
-       <a href="story.html">Story</a>
-       <a href="contact.html">Contact</a>
+      <div class="hidden md:flex gap-8 text-sm tracking-wide">
+        <a href="collections.html" class="hover:opacity-60 transition">Collections</a>
+        <a href="story.html" class="hover:opacity-60 transition">My Story</a>
+        <a href="contact.html" class="hover:opacity-60 transition">Contact</a>
       </div>
-
-        <!-- Mobile Menu Button -->
-        <button id="menuBtn" class="md:hidden text-2xl">
-          ☰
-        </button>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div class="hidden md:flex gap-8 text-sm">
-      <a href="gallery.html">Gallery</a>
-      <a href="collections.html">Collections</a>
-      <a href="story.html">Story</a>
-      <a href="contact.html">Contact</a>
-     </div>
 
     </nav>
   </header>
 
-  <main>
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center pt-24">
+    <div class="container-width px-6 grid md:grid-cols-2 gap-12 md:gap-20 items-center">
 
-    <!-- HERO -->
-    <section
-      class="parallax h-screen relative flex items-center justify-center text-center"
-      style="background-image:url('assets/images/hero/01.jpg')"
-    >
-      <div class="absolute inset-0 hero-overlay"></div>
-
-      <div
-        class="relative z-10 px-6 text-[#F0F5F9] fade-in"
-      >
-        <p class="uppercase tracking-[0.25em] text-sm mb-6">
-          Misztal Images Photography
+      <div>
+        <p class="uppercase tracking-[0.35em] text-xs text-[#52616B] mb-6">
+          Photography Archive
         </p>
 
-        <h1
-          class="text-5xl md:text-7xl font-light mb-6"
-        >
-         Welcome to my site!<br />
-              </h1>
+        <h1 class="font-serif-display text-5xl md:text-7xl leading-tight mb-8">
+          Quiet images from place, travel and memory.
+        </h1>
 
-        <p
-          class="max-w-2xl mx-auto text-lg text-gray-200 mb-8"
-        >
-          Here you'll find a collection of photos from past and recent travels and lives.
+        <p class="text-lg md:text-xl leading-8 text-[#52616B] max-w-xl mb-10">
+          Misztal Images is a personal photography archive featuring landscape,
+          travel, digital and 35mm film photography from Australia and abroad.
         </p>
 
-        <a
-          href="gallery.html"
-          class="inline-block bg-[#52616B] hover:opacity-90 transition px-8 py-4 rounded-full"
-        >
-          Explore Gallery
-        </a>
-      </div>
-    </section>
-
-    <!-- FEATURED COLLECTIONS -->
-    <section class="section-padding">
-      <div class="container-width">
-
-        <div class="text-center mb-16 fade-in">
-          <h2 class="text-4xl font-light mb-4">
-            Featured Collections
-          </h2>
-
-          <p class="max-w-xl mx-auto text-[#52616B]">
-                 'what I see'.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-
-          <article
-            class="bg-white rounded-3xl overflow-hidden shadow-sm card-hover fade-in"
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="collections.html"
+            class="px-7 py-3 border border-[#1E2022] text-sm tracking-wide hover:bg-[#1E2022] hover:text-white transition"
           >
-            <img
-              src="https://picsum.photos/700/500?random=2"
-              alt="Landscape photography"
-              class="h-72 w-full object-cover"
-            />
-
-            <div class="p-8">
-              <h3 class="text-2xl mb-3">
-                Land
-              </h3>
-
-              <p class="text-[#52616B] mb-6">
-                Layered ancient maountains and lush changing skies and moods.
-              </p>
-
-              <a href="collections.html" class="font-medium">
-                View Collection →
-              </a>
-            </div>
-          </article>
-
-          <article
-            class="bg-white rounded-3xl overflow-hidden shadow-sm card-hover fade-in"
-          >
-            <img
-              src="https://picsum.photos/700/500?random=3"
-              alt="Portrait photography"
-              class="h-72 w-full object-cover"
-            />
-
-            <div class="p-8">
-              <h3 class="text-2xl mb-3">
-                Water
-              </h3>
-
-              <p class="text-[#52616B] mb-6">
-                Focused on movement,light, life and sun.
-              </p>
-
-              <a href="collections.html" class="font-medium">
-                View Collection →
-              </a>
-            </div>
-          </article>
-
-          <article
-            class="bg-white rounded-3xl overflow-hidden shadow-sm card-hover fade-in"
-          >
-            <img
-              src="https://picsum.photos/700/500?random=4"
-              alt="Travel photography"
-              class="h-72 w-full object-cover"
-            />
-
-            <div class="p-8">
-              <h3 class="text-2xl mb-3">
-                Random
-              </h3>
-
-              <p class="text-[#52616B] mb-6">
-                Hidden scenes that vanish in an instant.
-              </p>
-
-              <a href="collections.html" class="font-medium">
-                View Collection →
-              </a>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT PREVIEW -->
-    <section class="section-padding bg-[#C9D6DF]/30">
-      <div
-        class="container-width grid lg:grid-cols-2 gap-12 items-center"
-      >
-
-        <div class="fade-in">
-          <img
-            src="https://picsum.photos/800/700?random=8"
-            alt="Photographer"
-            class="rounded-[2rem] shadow-md"
-          />
-        </div>
-
-        <div class="fade-in">
-          <p
-            class="uppercase tracking-[0.25em] text-sm mb-5"
-          >
-            Behind the Lens
-          </p>
-
-          <h2 class="text-4xl font-light mb-6">
-            Gear
-          </h2>
-
-          <p class="text-[#52616B] mb-6">
-            Nikon D850, Nikon D700, Pentax Kr and Nikon FM 35mm.
-          </p>
-
-          <p class="text-[#52616B] mb-8">
-        
-          </p>
+            View Collections
+          </a>
 
           <a
             href="story.html"
-            class="bg-[#1E2022] text-white px-8 py-4 rounded-full inline-block"
+            class="px-7 py-3 border border-[#C9D6DF] text-sm tracking-wide hover:border-[#1E2022] transition"
           >
-            Read My Story
+            My Story
           </a>
+        </div>
+      </div>
+
+      <div class="overflow-hidden">
+        <img
+          src="assets/images/hero/01.jpg"
+          alt="Landscape photograph from Misztal Images"
+          class="w-full h-[68vh] object-cover image-soft"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="py-24">
+    <div class="container-width px-6 max-w-3xl">
+      <p class="text-2xl md:text-3xl leading-relaxed font-light text-[#1E2022]">
+        The work is shaped by observation, place, memory and the simple act of
+        carrying a camera — from full-frame digital bodies to older cameras,
+        35mm film and scanned negatives.
+      </p>
+    </div>
+  </section>
+
+  <!-- PLACES AND ARCHIVES -->
+  <section class="py-24 bg-white">
+    <div class="container-width px-6">
+
+      <div class="mb-14">
+        <p class="uppercase tracking-[0.35em] text-xs text-[#52616B] mb-4">
+          Selected Collections
+        </p>
+
+        <h2 class="font-serif-display text-4xl md:text-5xl mb-6">
+          Places and archives
+        </h2>
+
+        <p class="text-[#52616B] max-w-2xl leading-7">
+          A simple selection of travel, landscape, local and archive photography.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-8">
+
+        <!-- Norway -->
+        <a href="norway.html" class="group block">
+          <div class="overflow-hidden mb-5 bg-[#C9D6DF]">
+            <img
+              src="assets/images/featured/01.jpeg"
+              alt="Norway landscape photography"
+              class="w-full h-80 object-cover image-soft"
+            />
+          </div>
+
+          <h3 class="font-serif-display text-2xl mb-2">
+            Norway
+          </h3>
+
+          <p class="text-sm leading-6 text-[#52616B]">
+            Fjords, coastlines, weather and northern light from travels through Norway.
+          </p>
+        </a>
+
+        <!-- Iceland -->
+        <a href="iceland.html" class="group block">
+          <div class="overflow-hidden mb-5 bg-[#C9D6DF]">
+            <img
+              src="assets/images/featured/02.jpeg"
+              alt="Iceland landscape photography"
+              class="w-full h-80 object-cover image-soft"
+            />
+          </div>
+
+          <h3 class="font-serif-display text-2xl mb-2">
+            Iceland
+          </h3>
+
+          <p class="text-sm leading-6 text-[#52616B]">
+            Volcanic landscapes, waterfalls, weather and changing light.
+          </p>
+        </a>
+
+        <!-- Wollongong -->
+        <a href="wollongong-environs.html" class="group block">
+          <div class="overflow-hidden mb-5 bg-[#C9D6DF]">
+            <img
+              src="assets/images/featured/03.jpeg"
+              alt="Wollongong coastal landscape photography"
+              class="w-full h-80 object-cover image-soft"
+            />
+          </div>
+
+          <h3 class="font-serif-display text-2xl mb-2">
+            Wollongong
+          </h3>
+
+          <p class="text-sm leading-6 text-[#52616B]">
+            Beaches, ocean pools, escarpment light and familiar local places.
+          </p>
+        </a>
+
+        <!-- Random -->
+        <a href="random.html" class="group block">
+          <div class="overflow-hidden mb-5 bg-[#C9D6DF]">
+            <img
+              src="assets/images/featured/04.jpeg"
+              alt="Random photography archive"
+              class="w-full h-80 object-cover image-soft"
+            />
+          </div>
+
+          <h3 class="font-serif-display text-2xl mb-2">
+            Random
+          </h3>
+
+          <p class="text-sm leading-6 text-[#52616B]">
+            Older images, scanned photographs, experiments and photographs outside the main collections.
+          </p>
+        </a>
+
+      </div>
+
+      <div class="mt-12">
+        <a
+          href="collections.html"
+          class="inline-block text-sm tracking-wide border-b border-[#1E2022] pb-1 hover:opacity-60 transition"
+        >
+          View all collections
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CAMERAS AND PROCESS -->
+  <section class="py-24">
+    <div class="container-width px-6 grid md:grid-cols-2 gap-14 items-start">
+
+      <div>
+        <p class="uppercase tracking-[0.35em] text-xs text-[#52616B] mb-4">
+          Cameras & Process
+        </p>
+
+        <h2 class="font-serif-display text-4xl md:text-5xl mb-6">
+          Digital, film and scanned archives
+        </h2>
+
+        <p class="text-[#52616B] leading-7 max-w-xl">
+          The cameras are part of the process rather than the subject of the work.
+          Each one has contributed to the archive in a different way — from detailed
+          landscape files to older digital images, 35mm film and scanned negatives.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+
+        <div class="border border-[#C9D6DF] p-6 bg-white">
+          <h3 class="font-serif-display text-2xl mb-2">Nikon D850</h3>
+          <p class="text-sm leading-6 text-[#52616B]">
+            Main digital body for landscape, travel and detailed image work.
+          </p>
+        </div>
+
+        <div class="border border-[#C9D6DF] p-6 bg-white">
+          <h3 class="font-serif-display text-2xl mb-2">Nikon D750</h3>
+          <p class="text-sm leading-6 text-[#52616B]">
+            Full-frame digital camera for travel, available light and general photography.
+          </p>
+        </div>
+
+        <div class="border border-[#C9D6DF] p-6 bg-white">
+          <h3 class="font-serif-display text-2xl mb-2">Nikon D700</h3>
+          <p class="text-sm leading-6 text-[#52616B]">
+            Older full-frame digital body with a distinctive, enduring image quality.
+          </p>
+        </div>
+
+        <div class="border border-[#C9D6DF] p-6 bg-white">
+          <h3 class="font-serif-display text-2xl mb-2">Pentax K-r</h3>
+          <p class="text-sm leading-6 text-[#52616B]">
+            Part of the earlier digital archive and photographic learning process.
+          </p>
+        </div>
+
+        <div class="border border-[#C9D6DF] p-6 bg-white">
+          <h3 class="font-serif-display text-2xl mb-2">Nikon FM</h3>
+          <p class="text-sm leading-6 text-[#52616B]">
+            35mm film camera used for slower, more deliberate image making.
+          </p>
+        </div>
+
+        <div class="border border-[#C9D6DF] p-6 bg-white">
+          <h3 class="font-serif-display text-2xl mb-2">Epson Scanner</h3>
+          <p class="text-sm leading-6 text-[#52616B]">
+            Used to bring negatives and older film images into the digital archive.
+          </p>
         </div>
 
       </div>
-    </section>
 
-  </main>
+    </div>
+  </section>
+
+  <!-- STORY PREVIEW -->
+  <section class="py-24 bg-[#1E2022] text-white">
+    <div class="container-width px-6 max-w-3xl">
+      <p class="uppercase tracking-[0.35em] text-xs text-[#C9D6DF] mb-6">
+        About
+      </p>
+
+      <h2 class="font-serif-display text-4xl md:text-5xl mb-8">
+        A personal archive, built slowly.
+      </h2>
+
+      <p class="text-lg leading-8 text-[#C9D6DF] mb-10">
+        Misztal Images began as a way to bring photographs out of hard drives,
+        negative sleeves and old folders, and into a more considered space.
+      </p>
+
+      <a
+        href="story.html"
+        class="inline-block border-b border-white pb-1 text-sm tracking-wide hover:opacity-70 transition"
+      >
+        Read my story
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT PREVIEW -->
+  <section class="py-24 bg-white">
+    <div class="container-width px-6 max-w-3xl">
+      <p class="uppercase tracking-[0.35em] text-xs text-[#52616B] mb-6">
+        Contact
+      </p>
+
+      <h2 class="font-serif-display text-4xl md:text-5xl mb-8">
+        Prints, image use or general enquiries.
+      </h2>
+
+      <p class="text-[#52616B] leading-7 mb-8">
+        For print enquiries, image use, collaborations or general contact, please email:
+      </p>
+
+      <a
+        href="mailto:hello@misztalimages.com"
+        class="text-2xl md:text-3xl font-light hover:opacity-70 transition"
+      >
+        hello@misztalimages.com
+      </a>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="bg-[#1E2022] text-[#F0F5F9] py-16">
-    <div
-      class="container-width px-6 grid md:grid-cols-4 gap-10"
-    >
+  <footer class="py-12 border-t border-[#C9D6DF]">
+    <div class="container-width px-6 flex flex-col md:flex-row justify-between gap-8 text-sm text-[#52616B]">
+
       <div>
-        <h3 class="font-semibold text-xl mb-4">
+        <p class="font-serif-display text-xl text-[#1E2022] mb-2">
           Misztal Images
-        </h3>
-
-        <p class="text-gray-300 text-sm">
-          Capturing what I see
         </p>
+        <p>Photography by Fred Misztal</p>
       </div>
 
-      <div>
-        <h4 class="font-semibold mb-4">
-          Explore
-        </h4>
-
-        <ul class="space-y-2 text-sm">
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="collections.html">Collections</a></li>
-        </ul>
+      <div class="flex flex-col md:items-end gap-2">
+        <a href="mailto:hello@misztalimages.com" class="hover:opacity-60 transition">
+          hello@misztalimages.com
+        </a>
+        <p>© 2026 Misztal Images. All rights reserved.</p>
       </div>
 
-      <div>
-        <h4 class="font-semibold mb-4">
-          Studio
-        </h4>
-
-        <ul class="space-y-2 text-sm">
-          <li><a href="story.html">Story</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="font-semibold mb-4">
-          Social
-        </h4>
-
-        <p class="text-sm text-gray-300">
-          Instagram • Pinterest • Behance
-        </p>
-      </div>
     </div>
   </footer>
-
-  <!-- Back To Top -->
-  <button
-    id="backToTop"
-    class="bg-[#52616B] text-white px-4 py-3 rounded-full"
-  >
-    ↑
-  </button>
-
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox">
-    <img id="lightboxImage" alt="Expanded view" />
-  </div>
-
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/animations.js"></script>
-  <script src="assets/js/lightbox.js"></script>
 
 </body>
 </html>
