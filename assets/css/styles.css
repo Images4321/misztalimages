@@ -1,0 +1,138 @@
+/* ==========================================================
+   NORDIC SLATE PHOTOGRAPHY PORTFOLIO
+   Shared Global Styles
+========================================================== */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styling */
+body {
+  background-color: #F0F5F9;
+  color: #1E2022;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+/* Shared spacing */
+.section-padding {
+  padding: 5rem 1.5rem;
+}
+
+/* Content width */
+.container-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Fade animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.9s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card hover */
+.card-hover {
+  transition: all 0.35s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+}
+
+/* Navbar blur */
+.nav-blur {
+  backdrop-filter: blur(10px);
+  background: rgba(240, 245, 249, 0.9);
+}
+
+/* Hero overlay */
+.hero-overlay {
+  background:
+    linear-gradient(
+      rgba(30, 32, 34, 0.35),
+      rgba(30, 32, 34, 0.45)
+    );
+}
+
+/* Parallax image */
+.parallax {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Footer links */
+.footer-link {
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #52616B;
+}
+
+/* Back to top button */
+#backToTop {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s ease;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 32, 34, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 92%;
+  max-height: 88vh;
+  border-radius: 16px;
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.mobile-menu.open {
+  max-height: 500px;
+}
+
+/* Image zoom hover */
+.gallery-image {
+  transition: transform 0.5s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.04);
+}

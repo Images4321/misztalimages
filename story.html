@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Story | Misztal Images</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="bg-[#F0F5F9] text-[#1E2022]">
+
+  <!-- NAVBAR -->
+  <header
+    class="fixed top-0 left-0 w-full z-50 nav-blur border-b border-[#C9D6DF]"
+  >
+    <nav class="container-width px-6 py-4">
+
+      <div class="flex justify-between items-center">
+
+        <a
+          href="index.html"
+          class="font-semibold text-2xl"
+        >
+          Misztal Images
+        </a>
+
+        <!-- Desktop Navigation -->
+      <!-- Desktop Navigation -->
+<div class="hidden md:flex gap-8 text-sm">
+  <a href="gallery.html">Gallery</a>
+
+  <a href="collections.html">
+    Collections
+  </a>
+
+  <a href="story.html">
+    Story
+  </a>
+
+  <a href="contact.html">
+    Contact
+  </a>
+</div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuBtn"
+          class="md:hidden text-2xl"
+          aria-label="Open navigation"
+        >
+          ☰
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+  id="mobileMenu"
+  class="mobile-menu md:hidden pt-4 flex flex-col gap-4"
+>
+  <a href="gallery.html">Gallery</a>
+  <a href="collections.html">Collections</a>
+  <a href="story.html">Story</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+    </nav>
+  </header>
+
+  <main class="pt-24">
+
+    <!-- HERO -->
+    <section
+      class="relative h-[70vh] parallax flex items-center justify-center text-center"
+      style="background-image:url('assets/images/hero/01.jpeg')"
+    >
+
+      <div class="absolute inset-0 hero-overlay"></div>
+
+      <div class="relative z-10 px-6 text-[#F0F5F9] fade-in">
+
+        <p
+          class="uppercase tracking-[0.3em] text-sm mb-4"
+        >
+          Behind The Lens
+        </p>
+
+        <h1
+          class="text-5xl md:text-7xl font-light mb-6"
+        >
+          Photos built on curiosity.<br />
+          </h1>
+
+        <p
+          class="max-w-2xl mx-auto text-lg text-gray-200"
+        >
+          Misztal Images began as an idea of sharing and showing experiences I have captured through film and digital photography.
+          Also getting my photos and ideas off the hard drive!
+        </p>
+
+      </div>
+    </section>
+
+    <!-- STORY INTRO -->
+    <section class="section-padding">
+      <div
+        class="container-width grid lg:grid-cols-2 gap-14 items-center"
+      >
+
+        <div class="fade-in">
+          <img
+            src="assets/images/story/01.jpeg"
+            alt="About Misztal Images"
+            class="rounded-[2rem] shadow-md"
+          />
+        </div>
+
+        <div class="fade-in">
+
+          <p
+            class="uppercase tracking-[0.25em] text-sm text-[#52616B] mb-4"
+          >
+            A Personal Journey
+          </p>
+
+          <h2
+            class="text-4xl md:text-5xl font-light mb-8"
+          >
+            Hi, 
+            I am George, 
+            located in Wollongong, NSW Australia.
+          </h2>
+
+          <div class="space-y-6 text-[#52616B] leading-8">
+
+            <p>
+              This site contains images of places I have travelled, lived and experienced.
+            </p>
+
+            <p>
+              I been have fascinated with photography from an early age, with developing black and white colour film in my teens and early 20's to exploring how photography works, how a story can be captured and how art can be expressed through film.
+            </p>
+
+            <p>
+              My aim to deliver an authentic 'as it is' image.
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES SECTION -->
+    <section
+      class="section-padding bg-[#C9D6DF]/30"
+    >
+      <div class="container-width">
+
+        <div class="text-center mb-16 fade-in">
+
+          <p
+            class="uppercase tracking-[0.25em] text-sm text-[#52616B] mb-4"
+          >
+            What Matters
+          </p>
+
+          <h2
+            class="text-4xl md:text-5xl font-light"
+          >
+            A simple approach to visual storytelling
+          </h2>
+
+        </div>
+
+        <div
+          class="grid md:grid-cols-3 gap-8"
+        >
+
+          <article
+            class="bg-white rounded-[2rem] p-8 shadow-sm card-hover fade-in"
+          >
+            <h3 class="text-2xl mb-4">
+              Observing
+            </h3>
+
+            <p class="text-[#52616B] leading-7">
+              Seeing whats authentic and real and trying to capture 'what I see'.
+            </p>
+          </article>
+
+          <article
+            class="bg-white rounded-[2rem] p-8 shadow-sm card-hover fade-in"
+          >
+            <h3 class="text-2xl mb-4">
+              Dynamic Environments
+            </h3>
+
+            <p class="text-[#52616B] leading-7">
+              The evershifting and changing environment we live in is an inspiration.
+            </p>
+          </article>
+
+          <article
+            class="bg-white rounded-[2rem] p-8 shadow-sm card-hover fade-in"
+          >
+            <h3 class="text-2xl mb-4">
+              Storytelling
+            </h3>
+
+            <p class="text-[#52616B] leading-7">
+              Every photograph should feel like a
+              fleeting moment in time that has been captured and appreciated.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE IMAGE -->
+    <section class="section-padding">
+
+      <div
+        class="container-width grid lg:grid-cols-2 gap-14 items-center"
+      >
+
+        <div class="fade-in">
+
+          <p
+            class="uppercase tracking-[0.25em] text-sm text-[#52616B] mb-4"
+          >
+            Inspired By Experience
+          </p>
+
+          <h2
+            class="text-4xl md:text-5xl font-light mb-6"
+          >
+            Behind the Scenes
+          </h2>
+
+          <p
+            class="text-[#52616B] leading-8 mb-6"
+          >
+            Inspiration comes from the context of where the image exists and what other life exists in within those ordinary moments.
+          </p>
+
+          <p
+            class="text-[#52616B] leading-8"
+          >
+            The aim is simple: create photography that
+            feels authentic and real.
+          </p>
+
+        </div>
+
+        <div class="fade-in">
+          <img
+            src="assets/images/story/02.jpeg"
+            alt="Photography inspiration"
+            class="rounded-[2rem] shadow-md"
+          />
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer
+    class="bg-[#1E2022] text-[#F0F5F9] py-16 mt-20"
+  >
+    <div class="container-width px-6 text-center">
+      <p class="text-sm text-gray-300">
+        Misztal Images
+      </p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button
+    id="backToTop"
+    class="bg-[#52616B] text-white px-4 py-3 rounded-full"
+  >
+    ↑
+  </button>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightboxImage" alt="Expanded image view" />
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+
+</body>
+</html>
