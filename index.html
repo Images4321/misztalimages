@@ -7,11 +7,11 @@
     content="width=device-width, initial-scale=1.0"
   />
 
-  <title>Misztal Images | Photography by Fred Misztal</title>
+  <title>Misztal Images | Photography by George Misztal</title>
 
   <meta
     name="description"
-    content="Misztal Images is a personal photography archive by Fred Misztal, featuring landscape, travel, digital and 35mm film photography from Australia and abroad."
+    content="Misztal Images is a personal photography archive by George Misztal, featuring landscape, travel, digital and 35mm film photography from Australia and abroad."
   />
 
   <!-- Google Fonts -->
@@ -57,6 +57,28 @@
       transform: scale(1.035);
       opacity: 0.92;
     }
+
+    /* Misztal Images header logo */
+    .site-logo {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .site-logo img {
+      display: block;
+      width: auto;
+      height: 62px;
+      max-width: 230px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .site-logo img {
+        height: 50px;
+        max-width: 190px;
+      }
+    }
   </style>
 </head>
 
@@ -64,10 +86,13 @@
 
   <!-- NAVBAR -->
   <header class="fixed top-0 left-0 w-full z-50 nav-blur border-b border-[#C9D6DF]">
-    <nav class="container-width px-6 py-4 flex justify-between items-center">
+    <nav class="container-width px-6 py-3 flex justify-between items-center">
 
-      <a href="index.html" class="text-xl md:text-2xl font-serif-display tracking-wide">
-        Misztal Images
+      <a href="index.html" class="site-logo" aria-label="Misztal Images home">
+        <img
+          src="assets/images/misztal-logo.png"
+          alt="Misztal Images"
+        />
       </a>
 
       <div class="hidden md:flex gap-8 text-sm tracking-wide">
@@ -372,7 +397,7 @@
         <p class="font-serif-display text-xl text-[#1E2022] mb-2">
           Misztal Images
         </p>
-        <p>Photography by Fred Misztal</p>
+        <p>Photography by George Misztal</p>
       </div>
 
       <div class="flex flex-col md:items-end gap-2">
